@@ -1,6 +1,12 @@
 # Flutter Testing Workshop
 
+> Şu anda **Bitmiş Projeyi** incelemektesiniz!
+
 Harika bir workshop'a hazır olun.
+
+> **Etkinlik Tarihi:** 3 Aralık 2022 - 15:30
+
+> **Etkinlik Yeri:** [Karatay Gençlik Merkezi](https://g.co/kgs/dVhzzf)
 
 Bu workshoptan sonra artık **test yazmaktan korkmayacaksınız**. Buglar sizden korkacak 👀
 
