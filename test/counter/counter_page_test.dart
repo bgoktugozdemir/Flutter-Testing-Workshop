@@ -157,8 +157,8 @@ void main() {
           expect(circularProgressIndicator, findsNothing);
           // TODO(71): tap on decreaseButton
           await tester.tap(decreaseButton);
-          // TODO(72): pump with 1ms duration
-          await tester.pump(const Duration(milliseconds: 1));
+          // TODO(72): pump
+          await tester.pump();
           // TODO(73): Test it finds
           expect(circularProgressIndicator, findsOneWidget);
           // TODO(74): pumpAndSettle
@@ -238,7 +238,7 @@ void main() {
           // TODO(93): Tap on resetButton
           await tester.tap(resetButton);
           // TODO(94): pump after 1 ms
-          await tester.pump(const Duration(milliseconds: 1));
+          await tester.pump();
           // TODO(95): Test it finds one
           expect(circularProgressIndicator, findsOneWidget);
           // TODO(96): pumpAndSettle
@@ -321,8 +321,8 @@ void main() {
           expect(circularProgressIndicator, findsNothing);
           // TODO(116): tap on decreaseButton
           await tester.tap(increaseButton);
-          // TODO(117): pump with 1ms duration
-          await tester.pump(const Duration(milliseconds: 1));
+          // TODO(117): pump
+          await tester.pump();
           // TODO(118): Test it finds
           expect(circularProgressIndicator, findsOneWidget);
           // TODO(119): pumpAndSettle
