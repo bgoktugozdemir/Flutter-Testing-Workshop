@@ -6,47 +6,41 @@ void main() {
     late CounterDataSource counterDataSource;
 
     setUp(() {
+      // TODO(1): Initialize `CounterDataSource`
       counterDataSource = const CounterDataSource();
     });
 
     group('increase', () {
       test('returns [1] when value is 0', () async {
-        const value = 0;
-        const expected = 1;
+        // TODO(2): Test it
+        final result = await counterDataSource.increase(0);
 
-        final result = await counterDataSource.increase(value);
-
-        expect(result, equals(expected));
+        expect(result, 1);
       });
     });
 
     group('decrease', () {
       test('returns [4] when value is 5', () async {
-        const value = 5;
-        const expected = 4;
+        // TODO(3): Test it
+        final result = await counterDataSource.decrease(5);
 
-        final result = await counterDataSource.decrease(value);
-
-        expect(result, equals(expected));
+        expect(result, 4);
       });
 
       test('returns [0] when value is 0', () async {
-        const value = 0;
-        const expected = 0;
+        // TODO(4): Test it
+        final result = await counterDataSource.decrease(0);
 
-        final result = await counterDataSource.decrease(value);
-
-        expect(result, equals(expected));
+        expect(result, 0);
       });
     });
 
     group('reset', () {
       test('returns [0]', () async {
-        const expected = 0;
-
+        // TODO(5): Test it
         final result = await counterDataSource.reset();
 
-        expect(result, equals(expected));
+        expect(result, 0);
       });
     });
   });
