@@ -12,12 +12,11 @@ void main() {
 
     setUp(() {
       counterDataSource = MockCounterDataSource();
-      counterRepository = CounterRepository(
-        counterDataSource: counterDataSource,
-      );
     });
 
     test('initial counter value is 0', () {
+      counterRepository = CounterRepository();
+
       expect(counterRepository.value, 0);
     });
 
@@ -34,6 +33,10 @@ void main() {
       const expected = 1;
 
       setUp(() {
+        counterRepository = CounterRepository(
+          counterDataSource: counterDataSource,
+        );
+
         when(() => counterDataSource.increase(initialValue))
             .thenAnswer((_) async => expected);
       });
