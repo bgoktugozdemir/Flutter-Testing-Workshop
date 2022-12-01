@@ -1,10 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_testing_workshop/counter/data/counter_data_source.dart';
 import 'package:flutter_testing_workshop/counter/repositories/counter_repository.dart';
-import 'package:mocktail/mocktail.dart';
 
 // TODO(6): Mock CounterDataSource
-class MockCounterDataSource extends Mock implements CounterDataSource {}
 
 void main() {
   group('CounterRepository', () {
@@ -13,16 +11,14 @@ void main() {
 
     setUp(() {
       // TODO(7): Initialize MockCounterDataSource
-
-      // TODO(8): Initialize CounterRepository with MockCounterDataSource
     });
 
     test('initial counter value is 0', () {
-      // TODO(9): Test it
+      // TODO(8): Test it
     });
 
     test('initialValue parameter sets value correctly', () {
-      // TODO(10): Test it
+      // TODO(9): Test it
     });
 
     group('increase', () {
@@ -30,6 +26,8 @@ void main() {
       const expected = 1;
 
       setUp(() {
+        // TODO(10): Initialize CounterRepository with MockCounterDataSource
+
         // TODO(11): Set up when increase
       });
 
