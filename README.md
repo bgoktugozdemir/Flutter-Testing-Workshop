@@ -1,5 +1,7 @@
 # Flutter Testing Workshop
 
+> Şu anda **Başlangıç Projesini** incelemektesiniz.
+
 Harika bir workshop'a hazır olun.
 
 Bu workshoptan sonra artık **test yazmaktan korkmayacaksınız**. Buglar sizden korkacak 👀
@@ -8,6 +10,8 @@ Workshop'a gelmeden önce aşağıdaki hazırlıkları yapmanız gerekmektedir. 
 
 **Projeyi daha sonra incelemek isterseniz, repoya yıldız atabilirsiniz.**
 
+**Etkinlik Tarihi:** 3 Aralık 2022 - 15:30
+**Etkinlik Yeri:** [Karatay Gençlik Merkezi](https://g.co/kgs/dVhzzf)
 ## Ön Hazırlık
 
 - Flutter stable (3.3.9) kurulmalı ve gelmeden önce test edilmelidir.
