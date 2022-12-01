@@ -131,7 +131,7 @@ void main() {
 
           // TODO(71): tap on decreaseButton
 
-          // TODO(72): pump with 1ms duration
+          // TODO(72): pump
 
           // TODO(73): Test it finds
 
@@ -269,7 +269,7 @@ void main() {
 
           // TODO(116): Tap on increaseButton
 
-          // TODO(117): pump with 1ms duration
+          // TODO(117): pump
 
           // TODO(118): Test it finds
 
