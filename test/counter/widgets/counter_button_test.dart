@@ -49,8 +49,6 @@ void main() {
 
         // TODO(25): find CounterButton
 
-        final button = find.byType(CounterButton);
-
         // TODO(26): Test it
       },
     );
