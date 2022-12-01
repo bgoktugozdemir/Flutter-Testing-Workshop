@@ -94,10 +94,6 @@ void main() {
 
         testWidgets('renders decrease button with correct parameters',
             (tester) async {
-          const expectedIcon = Icons.remove;
-          const expectedTooltip = 'Decrease';
-          const expectedColor = Colors.red;
-
           // TODO(58): pumpMaterialApp
 
           // TODO(59): find CounterButton widget with decreaseButton
@@ -125,10 +121,9 @@ void main() {
         testWidgets(
             'renders CircularProgressIndicator when tap on decrease button',
             (tester) async {
-          // TODO(68): when counterRepository.decrease() answer 0 with 10ms delay
-
           final circularProgressIndicator =
               find.byType(CircularProgressIndicator);
+          // TODO(68): when counterRepository.decrease() answer 0 with 10ms delay
 
           // TODO(69): pumpMaterialApp
 
@@ -149,6 +144,7 @@ void main() {
       group('reset', () {
         const icon = Icons.restore;
         const tooltip = 'Reset';
+
         final resetButton = find.widgetWithIcon(CounterButton, icon);
 
         setUp(() {
@@ -166,9 +162,6 @@ void main() {
 
         testWidgets('renders reset button with correct parameters',
             (tester) async {
-          const expectedIcon = Icons.restore;
-          const expectedTooltip = 'Reset';
-
           // TODO(80): pumpMaterialApp
 
           // TODO(81): find CounterButton widget with resetButton
@@ -184,7 +177,7 @@ void main() {
 
           // TODO(85): Test it finds 10
 
-          // TODO(86): tap on decreaseButton
+          // TODO(86): tap on resetButton
 
           // TODO(87): when counterRepository.value return 0
 
@@ -196,28 +189,32 @@ void main() {
         testWidgets(
             'renders CircularProgressIndicator when tap on reset button',
             (tester) async {
+          final circularProgressIndicator =
+              find.byType(CircularProgressIndicator);
           // TODO(90): when counterRepository.reset() answer 0 after 10ms duration
 
-          // TODO(91): find CircularProgressIndicator
+          // TODO(91): pumpMaterialApp
 
-          // TODO(92): pumpMaterialApp
+          // TODO(92): Test it finds nothing
 
-          // TODO(93): Test it finds nothing
+          // TODO(93): Tap on resetButton
 
-          // TODO(94): Tap on resetButton
+          // TODO(94): pump after 1 ms
 
-          // TODO(95): pump after 1 ms
+          // TODO(95): Test it finds one
 
-          // TODO(96): Test it finds one
+          // TODO(96): pumpAndSettle
 
-          // TODO(97): pumpAndSettle
-
-          // TODO(98): Test it finds nothing
+          // TODO(97): Test it finds nothing
         });
       });
 
       group('increase', () {
-        final increaseButton = find.widgetWithIcon(CounterButton, Icons.add);
+        const icon = Icons.add;
+        const tooltip = 'Increase';
+        const backgroundColor = Colors.green;
+
+        final increaseButton = find.widgetWithIcon(CounterButton, icon);
 
         setUp(() {
           // TODO(99): Set up when counterRepository.value return 0
@@ -237,10 +234,6 @@ void main() {
 
         testWidgets('renders increase button with correct parameters',
             (tester) async {
-          const expectedIcon = Icons.add;
-          const expectedTooltip = 'Increase';
-          const expectedColor = Colors.green;
-
           // TODO(104): pumpMaterialApp
 
           // TODO(105): find CounterButton widget with increaseButton
@@ -266,23 +259,23 @@ void main() {
         testWidgets(
             'renders CircularProgressIndicator when tap on increase button',
             (tester) async {
+          final circularProgressIndicator =
+              find.byType(CircularProgressIndicator);
           // TODO(113): when counterRepository.increase() answer 1 after 10ms duration
 
-          // TODO(114): find CircularProgressIndicator
+          // TODO(114): pumpMaterialApp
 
-          // TODO(115): pumpMaterialApp
+          // TODO(115): Test it nothing
 
-          // TODO(116): Test it nothing
+          // TODO(116): Tap on increaseButton
 
-          // TODO(117): tap on decreaseButton
+          // TODO(117): pump with 1ms duration
 
-          // TODO(118): pump with 1ms duration
+          // TODO(118): Test it finds
 
-          // TODO(119): Test it finds
+          // TODO(119): pumpAndSettle
 
-          // TODO(120): pumpAndSettle
-
-          // TODO(121): Test it nothing
+          // TODO(120): Test it nothing
         });
       });
     });
